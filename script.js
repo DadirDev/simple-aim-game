@@ -3,8 +3,12 @@ let counter = document.getElementById("counter");
 let score;
 
 //Get score from lockalstorage
-score = parseInt(localStorage.getItem("score"));
+if (localStorage.getItem("score") === null) {
+  localStorage.setItem("score", 0);
+}
+score = localStorage.getItem("score");
 counter.innerHTML = score;
+
 //Random position
 Gameobject.style.top = Math.random() * 90 + "%";
 Gameobject.style.left = Math.random() * 90 + "%";
@@ -12,6 +16,7 @@ Gameobject.style.left = Math.random() * 90 + "%";
 function Random() {
   score++;
   localStorage.setItem("score", score);
+
   //Random position
   Gameobject.style.top = Math.random() * 90 + "%";
   Gameobject.style.left = Math.random() * 90 + "%";
