@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body style="user-select: none">
+    <p class="counter" id="counter">0</p>
+
+    <div class="container" id="container">
+      <div class="gameObject" id="obj"></div>
+    </div>
+    <button onclick="Clear()" class="clear">clear</button>
+
+    <span style="user-select: none">Border radius</span>
+    <input type="range" value="50" min="0" max="50" id="radius" />
+    <br />
+    <span>color</span>
+    <input type="color" id="color" value="#FF0000" />
+    <input type="color" id="bgcolor" value="#B4B4B4" />
+    <input type="color" id="bodycolor" value="#FFFFFF" />
+
+    <script src="script.js"></script>
+  </body>
+</html>

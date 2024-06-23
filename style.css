@@ -1,0 +1,42 @@
+.container {
+  position: relative;
+
+  background-color: rgb(180, 180, 180);
+
+  margin-left: auto;
+  margin-right: auto;
+
+  border: 1px solid black;
+
+  width: 500px;
+  height: 500px;
+
+  user-select: none;
+}
+.gameObject {
+  position: absolute;
+
+  background-color: #000000;
+
+  border: 1px solid black;
+  border-radius: 50%;
+
+  width: 10%;
+  height: 10%;
+
+  user-select: none;
+}
+.counter {
+  text-align: center;
+  font-size: xx-large;
+
+  margin: 0 auto auto;
+
+  user-select: none;
+}
+.clear {
+  display: block;
+  margin: 10px auto auto;
+
+  user-select: none;
+}
